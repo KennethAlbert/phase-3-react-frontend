@@ -66,8 +66,6 @@ function handleSubmit(e){
   marginTop:"2rem",
   padding:"15px",
   border:"none",
-  background:"green",
-  color:"black",
 
   }
 
@@ -97,7 +95,7 @@ function handleSubmit(e){
     <label htmlFor="price" value="price" >Price:</label>
     <input type="interger" value={price} name="price" onChange={(e)=>{setPrice(e.target.value)}}/><br/>
 
-    <input type="submit"  style={newStyles}  id="hover1" value="Update"/>
+    <input type="submit" style={newStyles} className="update"   value="Update"/>
   </form>
   
   </div>

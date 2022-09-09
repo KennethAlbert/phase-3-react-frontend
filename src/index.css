@@ -144,16 +144,34 @@ img {
   margin-right:14px;
 }
 
-button{
+.update,.delete{
   font-size:15px;
   padding:0px;
   border:none;
-  color:blueviolet;
+  font-weight: 800;
+  font-style: italic;
   margin-bottom:1rem;
 }
 
-button:hover{
+.update{
+  color:blue; 
+}
+
+.delete{
+  color:red; 
+}
+
+
+.update:hover{
   background-color:#fb8b24;
+  color: black;
+  padding:4px;
+  border-radius:10px;
+  
+}
+
+.delete:hover{
+  background-color:red;
   color: black;
   padding:4px;
   border-radius:10px;
@@ -183,9 +201,7 @@ button:hover{
 
 
 
-#hover1:hover{
-background-color:gold;  
-}
+
 
 .cartNav div{
   border: none;
