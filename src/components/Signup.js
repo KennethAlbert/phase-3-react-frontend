@@ -57,7 +57,7 @@ fetch('http://127.0.0.1:9393/signup', {
     <input type="tel" name="tel" onChange={onchange}/><br/><br/>
     <label htmlFor="password" value="password" >Password:</label>
     <input type="password"  name="password" onChange={onchange}/><br/>
-    <input type="submit"  style={{marginTop:"2rem",padding:"15px",border:"none",background:"pink"}}   value="SignUp"/>
+    <input type="submit"  style={{marginTop:"2rem",padding:"15px",border:"none",background:"blue"}}   value="SignUp"/>
   </form>
   
   </div>

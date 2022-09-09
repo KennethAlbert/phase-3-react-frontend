@@ -32,8 +32,8 @@ const rental=rentals.filter((rental)=>rental.owner_id ===parseInt(id)).map(renta
          <h4 >PRICE: ${rental.price} </h4><p className="spacing">per night</p>
          <p className="spacing">call: {rental.owner.tel}</p>
          <p >Email: {rental.owner.email}</p>
-         <button onClick={() => navigate(`/rentals/update/${rental.id}`)}>Update</button>
-         <button onClick={() => handleRemove(rental.id)}>Remove</button>
+         <button className='update' onClick={() => navigate(`/rentals/update/${rental.id}`)}>Update</button>
+         <button  className='delete' onClick={() => handleRemove(rental.id)}>Remove</button>
          </div>
     )
 })
