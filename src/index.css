@@ -172,7 +172,13 @@ button:hover{
  
 }
 
+#hover1{
+  margin-top:"2rem";
+  padding:"15px";
+  border:"none";
+  background:"pink"
 
+}
 
 
 
@@ -192,7 +198,15 @@ background-color:gold;
   background-color: #f8f8f8;
 }
 
+a {
+  text-decoration: none !important;
+  color: brown;
+}
 
+a:hover{
+  text-decoration:underline !important;;
+  
+}
 
 .login{
 border-style: inset;
@@ -213,7 +227,6 @@ padding:15px;
   border-radius:15px;
   
 }
-
 
 
 
