@@ -1,5 +1,7 @@
 import {useNavigate,useParams} from "react-router-dom";
 import { useState } from "react";
+import {WiDirectionLeft} from 'react-icons/wi'
+   
 
 
 function AddRentals({handleAdd}) {
@@ -48,7 +50,7 @@ function AddRentals({handleAdd}) {
   return (
     <div>
     <nav className="cartNav" >
-         <div><button className="submit" onClick={() => navigate(-1)}>Home</button></div>
+         <div><WiDirectionLeft  size={28} className="submit" onClick={() => navigate(-1)}/></div>
          <p style={{fontStyle:"italic",fontSize:"3rem"}}>Find A Motel</p>
      </nav>
 
