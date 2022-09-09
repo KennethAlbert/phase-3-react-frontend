@@ -64,7 +64,7 @@ function AddRentals({handleAdd}) {
     <input type="text" name="location" onChange={onchange}/><br/><br/>
     <label htmlFor="price" value="price" >Price:</label>
     <input type="interger"  name="price" onChange={onchange}/><br/>
-    <input type="submit"  style={{marginTop:"2rem",padding:"15px",border:"none",background:"pink"}}   value="SignUp"/>
+    <input type="submit"  style={{marginTop:"2rem",padding:"15px",border:"none",background:"pink"}}   value="Add Rentals"/>
   </form>
   
   </div>
