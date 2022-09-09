@@ -61,6 +61,17 @@ function handleSubmit(e){
   }
 
 
+
+  const newStyles={
+  marginTop:"2rem",
+  padding:"15px",
+  border:"none",
+  background:"green",
+  color:"black",
+
+  }
+
+
   return (
     <div>
     <nav className="cartNav" >
@@ -86,7 +97,7 @@ function handleSubmit(e){
     <label htmlFor="price" value="price" >Price:</label>
     <input type="interger" value={price} name="price" onChange={(e)=>{setPrice(e.target.value)}}/><br/>
 
-    <input type="submit"  style={{marginTop:"2rem",padding:"15px",border:"none",background:"pink"}}   value="SignUp"/>
+    <input type="submit"  style={newStyles}  id="hover1" value="Update"/>
   </form>
   
   </div>

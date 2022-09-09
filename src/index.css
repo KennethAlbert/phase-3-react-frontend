@@ -172,6 +172,15 @@ button:hover{
  
 }
 
+
+
+
+
+
+#hover1:hover{
+background-color:gold;  
+}
+
 .cartNav div{
   border: none;
   border-radius:10px;
@@ -183,15 +192,7 @@ button:hover{
   background-color: #f8f8f8;
 }
 
-a {
-  text-decoration: none !important;
-  color: brown;
-}
 
-a:hover{
-  text-decoration:underline !important;;
-  
-}
 
 .login{
 border-style: inset;
@@ -212,6 +213,7 @@ padding:15px;
   border-radius:15px;
   
 }
+
 
 
 
