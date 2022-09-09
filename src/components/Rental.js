@@ -27,7 +27,7 @@ function handleBooking(id) {
        <h4 >PRICE: ${rental.price} </h4><p className="spacing">per night</p>
        <p className="spacing">call: {rental.owner.tel}</p>
        <p >Email: {rental.owner.email}</p>
-       <button style={{display:available? "": "none",fontStyle: "italic",fontSize:"14px",color:"green"}}  onClick={()=>handleBooking(rental.id)}>Book</button>
+       <button style={{display:available? "": "none",fontStyle: "italic",fontSize:"14px",color:"green"}} className='rentalsbtn' onClick={()=>handleBooking(rental.id)}>Book</button>
        </div>
   )
 }
