@@ -6,6 +6,7 @@ import Signup from "./Signup";
 import OwnerRental from "./OwnerRental";
 import AddRentals from "./AddRentals";
 import Update from "./Update";
+import Footer from "./Footer";
 
 
 
@@ -46,16 +47,22 @@ function handleDelete(id) {
   
   return (
     <>
+    
     <Router>
     <Routes>
+    
       <Route exact path="/" element={<Rentals rentals={rentals} />}/>
       <Route  path="/login" element={<Login />}/>
       <Route  path="/signup" element={<Signup />}/>
       <Route  path="/owner/:id/rentals" element={<OwnerRental handleDelete={handleDelete} rentals={rentals}/>}/>
       <Route  path="/addrentals/:owner_id" element={<AddRentals handleAdd={handleAdd}/>}/>
+      
       <Route path="/rentals/update/:id" element={<Update rentals={rentals}  handUpdate={handUpdate}/>}/>
      </Routes>
+     
+     <Footer/>
      </Router>
+     
     </>
   );
   }
