@@ -18,7 +18,7 @@ fetch(`https://find-a-motel.herokuapp.com/login/${email}`)
  return  res.json()
  })
 .then(data=>{
-  console.log(data)
+  
   navigate(`/owner/${data.id}/rentals`)})
 
 }

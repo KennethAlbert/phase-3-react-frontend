@@ -104,14 +104,6 @@ function handleSubmit(e){
     <input type="radio" onChange={(e)=>{setAvailability (Boolean(e.target.value))}} checked={available===false}  value="" name="booked" />
     <label htmlFor="booked">Booked</label><br/>
 
-
-
-
-
-
-
-
-
     <input type="submit" style={newStyles} className="update"   value="Update"/>
   </form>
   

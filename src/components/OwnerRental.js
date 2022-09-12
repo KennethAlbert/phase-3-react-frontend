@@ -7,7 +7,7 @@ function OwnerRental({rentals,handleDelete}) {
 const {id}=useParams()
 const navigate=useNavigate()
 
-console.log("id",id)
+
 
 function handleRemove(id) {
   fetch('https://find-a-motel.herokuapp.com/rentals/' + parseInt(id), {
@@ -60,7 +60,7 @@ if (rental.length===0){
 }
 
 
-console.log(rental.id)
+
 
 
   return (
