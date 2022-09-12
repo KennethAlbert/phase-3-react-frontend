@@ -38,7 +38,7 @@ function updateRentals(){
 }
      
 
-console.log(available)
+
 
 function handleSubmit(e){
   e.preventDefault()
@@ -75,7 +75,7 @@ function handleSubmit(e){
   return (
     <div>
     <nav className="cartNav" >
-         <div><button className="submit" onClick={() => navigate(-1)}>Home</button></div>
+         <button className="update" style={{margin:"1rem",color:"black",padding:"1rem",borderRadius:"15px"}} onClick={() => navigate(-1)}>Home</button>
          <p style={{fontStyle:"italic",fontSize:"3rem"}}>Find A Motel</p>
      </nav>
 
