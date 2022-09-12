@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer-wrapper " >
     
-    <div><footer style={{fontStyle:"italic"}}>{`Copyright © FindAMotel ${year}`}</footer>;</div>
+    <div><footer style={{fontStyle:"italic"}}>{`Copyright © FindAMotel ${year}`};</footer></div>
     
    </div>
   )
