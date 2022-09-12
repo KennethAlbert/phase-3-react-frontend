@@ -27,7 +27,8 @@ const rental=rentals.filter((rental)=>rental.owner_id ===parseInt(id)).map(renta
         <img src={rental.image} alt={rental.name}/>
          <h3 className="spacing"> {rental.name}</h3>
          <h3 className="spacing">Your Name: {rental.owner.name}</h3>
-         <p className="spacing">DESCRIPTION: {rental.description}</p>  
+         <p className="spacing">DESCRIPTION: {rental.description}</p> 
+         <h4 className="spacing">STATUS: {rental.available?"Available":"Booked"}</h4> 
          <p>LOCATION: {rental.location}</p>
          <h4 >PRICE: ${rental.price} </h4><p className="spacing">per night</p>
          <p className="spacing">call: {rental.owner.tel}</p>
