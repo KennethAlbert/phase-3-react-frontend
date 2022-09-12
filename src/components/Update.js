@@ -75,7 +75,7 @@ function handleSubmit(e){
   return (
     <div>
     <nav className="cartNav" >
-         <button className="update" style={{margin:"1rem",color:"black",padding:"1rem",borderRadius:"15px"}} onClick={() => navigate(-1)}>Home</button>
+         <button className="update" style={{margin:"1rem",color:"black",padding:"1rem",borderRadius:"15px"}} onClick={() => navigate(-1)}>Back</button>
          <p style={{fontStyle:"italic",fontSize:"3rem"}}>Find A Motel</p>
      </nav>
 
