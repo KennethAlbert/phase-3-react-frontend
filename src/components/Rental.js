@@ -6,7 +6,7 @@ const [available, setAvailable] = useState(rental.available);
 
 function handleBooking(id) {
   setAvailable(false)
-  fetch(`http://127.0.0.1:9393/rentals/${id}`, {
+  fetch(`https://find-a-motel.herokuapp.com/rentals/${id}`, {
      method: 'PATCH',
      body: JSON.stringify({available: false}),
      headers: {

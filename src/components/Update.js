@@ -11,7 +11,7 @@ function Update({rentals,handUpdate}) {
   const [image, setImage] = useState("");
   const [location,setLocation]=useState("")
   const [price, setPrice] = useState("");
-
+  const [available, setAvailability] = useState("")
 
 
 const navigate=useNavigate()
@@ -32,19 +32,21 @@ function updateRentals(){
     setImage(rental.image)
     setLocation(rental.location)
     setPrice(rental.price)
+    setAvailability(rental.available)
 
   })
 }
      
 
+console.log(available)
 
 function handleSubmit(e){
   e.preventDefault()
-  let update={name,description,image,location,price}
+  let update={name,description,image,location,price,available}
   
   handUpdate(id,update)
 
-  fetch(`http://127.0.0.1:9393/rentals/update/${id}`, {
+  fetch(`https://find-a-motel.herokuapp.com/rentals/update/${id}`, {
     method: 'PATCH',
     body: JSON.stringify(
       update
@@ -83,7 +85,7 @@ function handleSubmit(e){
     <input type="text" name="name" value={name} onChange={(e)=>{setName(e.target.value)}}/><br/><br/>
 
     <label htmlFor="description" value="description">Description: </label>
-    <textarea name="description" value={description} rows="1" cols="50" onChange={(e)=>{setDescription(e.target.value)}}>
+    <textarea name="description" value={description} rows="5" cols="50" onChange={(e)=>{setDescription(e.target.value)}}>
     </textarea><br/><br/>
 
     <label htmlFor="image" value="image">Image:</label>
@@ -93,7 +95,22 @@ function handleSubmit(e){
     <input type="text" value={location} name="location" onChange={(e)=>{setLocation(e.target.value)}}/><br/><br/>
 
     <label htmlFor="price" value="price" >Price:</label>
-    <input type="interger" value={price} name="price" onChange={(e)=>{setPrice(e.target.value)}}/><br/>
+    <input type="interger" value={price} name="price" onChange={(e)=>{setPrice(e.target.value)}}/><br/><br/><br/>
+
+
+    <input type="radio" onChange={(e)=>{setAvailability(Boolean(e.target.value))}} checked={available===true} name="Available" value="true"/>
+    <label htmlFor="Available">Available</label><br/><br/>
+
+    <input type="radio" onChange={(e)=>{setAvailability (Boolean(e.target.value))}} checked={available===false}  value="" name="booked" />
+    <label htmlFor="booked">Booked</label><br/>
+
+
+
+
+
+
+
+
 
     <input type="submit" style={newStyles} className="update"   value="Update"/>
   </form>

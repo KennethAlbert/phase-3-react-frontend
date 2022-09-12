@@ -19,7 +19,7 @@ function onchange(e){
 
 function handleSubmit(e){
 e.preventDefault()
-fetch('http://127.0.0.1:9393/signup', {
+fetch('https://find-a-motel.herokuapp.com/signup', {
   method: 'POST',
   body: JSON.stringify(
     signUp

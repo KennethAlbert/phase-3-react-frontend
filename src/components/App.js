@@ -15,7 +15,7 @@ import Update from "./Update";
 function App() {
 const [rentals, setRentals] = useState([]);
 
-const url = 'http://127.0.0.1:9393/rentals'
+const url = 'https://find-a-motel.herokuapp.com/rentals'
 
 useEffect(() => {
 fetch(url)
@@ -36,7 +36,7 @@ function handleAdd(newrentals) {
 
 function handUpdate(id,updates) {
 const exist = rentals.find((x) => x.id === parseInt(id));
-return (setRentals(rentals.map((x) =>x.id === parseInt(id)?{...exist ,name: updates.name,description: updates.description,image: updates.image,location: updates.location,price: updates.price}:x)))
+return (setRentals(rentals.map((x) =>x.id === parseInt(id)?{...exist ,name: updates.name,description: updates.description,image: updates.image,location: updates.location,price: updates.price,available: updates.available}:x)))
 }
 
 

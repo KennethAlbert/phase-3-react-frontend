@@ -25,7 +25,7 @@ function AddRentals({handleAdd}) {
     function handleSubmit(e){
       e.preventDefault()
      console.log(add)
-     fetch('http://127.0.0.1:9393/rentals', {
+     fetch('https://find-a-motel.herokuapp.com/rentals', {
   method: 'POST',
   body: JSON.stringify(
     add
@@ -40,7 +40,7 @@ function AddRentals({handleAdd}) {
     if(data.id===undefined){
      return navigate("/")
     }else
-   return navigate(`/owner/${parseInt(owner_id)}}/rentals`)
+   return navigate(`/owner/${parseInt(owner_id)}/rentals`)
   })
         
     }
@@ -58,7 +58,7 @@ function AddRentals({handleAdd}) {
     <label htmlFor="name"   value="name">Name:</label>
     <input type="text" name="name" onChange={onchange}/><br/><br/>
     <label htmlFor="description" value="email">Description: </label>
-    <textarea name="description" rows="1" cols="50" onChange={onchange}>
+    <textarea name="description" rows="3" cols="50" onChange={onchange}>
     </textarea><br/><br/>
     <label htmlFor="image" value="image">Image:</label>
     <input type="text" name="image" onChange={onchange}/><br/><br/>
