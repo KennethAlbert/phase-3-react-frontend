@@ -71,6 +71,11 @@ form{
 background-color: #fb8b24;
 }
 
+.back:hover{
+background-color: #cbc0d3;
+ border-radius:15px;
+}
+
 .results {
   padding-top:5%;
   display:flex;

@@ -50,7 +50,7 @@ function AddRentals({handleAdd}) {
   return (
     <div>
     <nav className="cartNav" >
-         <div><WiDirectionLeft  size={28} className="submit" onClick={() => navigate(-1)}/></div>
+         <WiDirectionLeft  size={28} className="back" onClick={() => navigate(-1)}/>
          <p style={{fontStyle:"italic",fontSize:"3rem"}}>Find A Motel</p>
      </nav>
 
